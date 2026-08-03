@@ -26,6 +26,7 @@ const items = [
 export function TrustStrip() {
   return (
     <section aria-label="Nos atouts" className="border-y border-line bg-card">
+      <h2 className="sr-only">Les avantages de TRIFIX</h2>
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-10 lg:grid-cols-4">
         {items.map(({ icon: Icon, title, text }) => (
           <div key={title} className="flex min-w-0 flex-col gap-2">
