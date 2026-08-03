@@ -59,23 +59,23 @@ export const business = {
   reviews: [
     {
       author: "Fati Fati",
-      text: "Souligne la variété des cosmétiques, les petits prix et une vendeuse sympathique et attentionnée.",
+      text: "Beaucoup de choix à petits prix, avec une vendeuse sympathique et attentionnée.",
     },
     {
       author: "Gaelle Kubu",
-      text: "Met en avant l’ambiance accueillante de la boutique et remercie M. Papito pour son service.",
+      text: "Un accueil chaleureux et un service très apprécié. Merci à M. Papito.",
     },
     {
       author: "Abdoul Mouslim Mahama",
-      text: "Se dit satisfait de son Samsung Galaxy S25 Ultra, de l’accueil reçu et de l’aide au transfert de ses données.",
+      text: "Très satisfait de son nouveau Samsung Galaxy S25 Ultra, de l’accueil et de l’aide au transfert de données.",
     },
     {
       author: "Syd Weaver",
-      text: "Décrit une équipe sympathique et serviable.",
+      text: "Une équipe sympathique et serviable.",
     },
     {
       author: "ZITA DJUIGNE",
-      text: "Souligne un accueil chaleureux et un vendeur sympathique et souriant.",
+      text: "Un accueil chaleureux, avec un vendeur sympathique et souriant.",
     },
   ],
 } as const;
