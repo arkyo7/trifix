@@ -5,7 +5,7 @@ import { business } from "@/data/business";
 
 export function ReviewsSection() {
   return (
-    <section id="avis" className="bg-card py-16 lg:py-20">
+    <section id="avis" className="scroll-mt-24 bg-card py-16 lg:py-20">
       <div className="mx-auto max-w-6xl px-4 text-center">
         <p className="text-sm font-extrabold uppercase tracking-widest text-brand">
           Avis clients
