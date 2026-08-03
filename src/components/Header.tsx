@@ -31,12 +31,12 @@ export function Header() {
           : "border-transparent bg-cream"
       }`}
     >
-      <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-2">
         <a
           href="#accueil"
           className="flex min-w-0 items-center gap-2 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
-          <Logo />
+          <Logo className="h-12 sm:h-14" />
           <span className="sr-only">TRIFIX — Accueil</span>
         </a>
 
