@@ -6,13 +6,18 @@ export function CosmeticsSection() {
   return (
     <section aria-labelledby="cosmetics-title" className="bg-brand-soft py-12">
       <div className="mx-auto grid max-w-5xl items-center gap-8 px-4 md:grid-cols-[40fr_60fr]">
-        <SmartImage
-          src={business.images.cosmetics}
-          alt="Sélection de produits cosmétiques disponible chez TRIFIX"
-          width={720}
-          height={520}
-          className="rounded-2xl border border-line"
-        />
+        <figure className="m-0">
+          <SmartImage
+            src={business.images.cosmeticsImage}
+            alt="Sélection illustrative de produits cosmétiques disponible en boutique"
+            width={1440}
+            height={1088}
+            className="rounded-2xl border border-line"
+          />
+          <figcaption className="mt-2 text-xs text-muted-foreground">
+            Photo d’illustration
+          </figcaption>
+        </figure>
         <div>
           <p className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-brand-deep">
             <Sparkles className="h-4 w-4" aria-hidden="true" />

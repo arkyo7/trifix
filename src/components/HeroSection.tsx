@@ -58,10 +58,10 @@ export function HeroSection() {
 
         <div className="relative">
           <SmartImage
-            src={business.images.facade}
-            alt="Façade de la boutique TRIFIX à la Chaussée d'Ixelles 75"
-            width={880}
-            height={1000}
+            src={business.images.heroImage}
+            alt="Intérieur illustratif d’une boutique de smartphones moderne à Ixelles"
+            width={1600}
+            height={1200}
             priority
             className="rounded-3xl border border-line shadow-lg"
           />

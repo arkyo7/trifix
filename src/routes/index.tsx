@@ -8,7 +8,7 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { AboutSection } from "@/components/AboutSection";
 import { CosmeticsSection } from "@/components/CosmeticsSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
-import { GallerySection } from "@/components/GallerySection";
+
 import { PracticalInfoSection } from "@/components/PracticalInfoSection";
 import { FinalCta } from "@/components/FinalCta";
 import { Footer } from "@/components/Footer";
@@ -55,7 +55,7 @@ function HomePage() {
         <AboutSection />
         <CosmeticsSection />
         <ReviewsSection />
-        <GallerySection />
+        
         <PracticalInfoSection />
         <FinalCta />
       </main>
