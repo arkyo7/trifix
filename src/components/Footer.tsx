@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-ink pb-24 pt-14 text-cream/80 md:pb-14">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-3">
         <div>
-          <Logo className="h-9" />
+          <Logo className="h-16" />
           <p className="mt-4 text-sm font-extrabold text-cream">TRIFIX</p>
           <address className="mt-2 text-sm not-italic">
             Chaussée d'Ixelles 75
@@ -50,18 +50,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 flex max-w-6xl flex-col gap-3 border-t border-cream/10 px-4 pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto mt-10 max-w-6xl border-t border-cream/10 px-4 pt-6 text-xs">
         <p>© {year} TRIFIX. Tous droits réservés.</p>
-        <ul className="flex gap-4">
-          <li>
-            <span className="text-cream/50">Mentions légales — bientôt disponible</span>
-          </li>
-          <li>
-            <span className="text-cream/50">
-              Politique de confidentialité — bientôt disponible
-            </span>
-          </li>
-        </ul>
       </div>
     </footer>
   );
