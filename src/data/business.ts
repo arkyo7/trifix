@@ -43,21 +43,18 @@ export const business = {
     { id: "accueil", label: "Accueil" },
     { id: "services", label: "Services" },
     { id: "avis", label: "Avis" },
-    { id: "galerie", label: "Galerie" },
     { id: "infos-pratiques", label: "Infos pratiques" },
   ],
+  // Chemins d'images centralisés.
+  // `logo` = marque officielle TRIFIX : ne jamais remplacer ni régénérer.
+  // Les fichiers `temp-*` sont des photos d'illustration provisoires : il suffit
+  // de remplacer ces chemins par les photographies réelles du client.
   images: {
-    logo: "/images/trifix/logo-trifix.png",
-    facade: "/images/trifix/fachada-trifix.webp",
-    service: "/images/trifix/atendimento-trifix.webp",
-    interior1: "/images/trifix/interior-trifix-01.webp",
-    interior2: "/images/trifix/interior-trifix-02.webp",
-    smartphones: "/images/trifix/smartphones-trifix.webp",
-    dataTransfer: "/images/trifix/transferencia-dados.webp",
-    cosmetics: "/images/trifix/cosmeticos-trifix.webp",
-    team: "/images/trifix/equipe-trifix.webp",
-    nfc: "/images/trifix/pagamento-nfc.webp",
-    og: "/images/trifix/og-trifix.jpg",
+    logo: "/images/logo-trifix.png",
+    heroImage: "/images/trifix/temp-hero-boutique.webp",
+    customerServiceImage: "/images/trifix/temp-conseil-client.webp",
+    dataTransferImage: "/images/trifix/temp-transfert-donnees.webp",
+    cosmeticsImage: "/images/trifix/temp-cosmetiques.webp",
   },
   reviews: [
     {

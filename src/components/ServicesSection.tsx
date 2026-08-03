@@ -1,6 +1,5 @@
 import { Smartphone, MessagesSquare, ArrowLeftRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { SmartImage } from "@/components/SmartImage";
 import { business } from "@/data/business";
 
 const services = [
@@ -8,22 +7,22 @@ const services = [
     icon: Smartphone,
     title: "Smartphones",
     text: "Nous vous présentons nos smartphones en boutique et prenons le temps de vous montrer les modèles disponibles.",
-    image: business.images.smartphones,
-    alt: "Sélection de smartphones présentée en boutique chez TRIFIX",
+    image: null,
+    alt: "",
   },
   {
     icon: MessagesSquare,
     title: "Conseil personnalisé",
     text: "Un accompagnement humain, sans jargon, pour vous orienter vers un téléphone adapté à votre usage réel.",
-    image: business.images.service,
-    alt: "Accompagnement personnalisé d’un client chez TRIFIX",
+    image: null,
+    alt: "",
   },
   {
     icon: ArrowLeftRight,
     title: "Transfert de données",
     text: "Nous vous accompagnons dans le transfert de vos données vers votre nouveau smartphone.",
-    image: business.images.dataTransfer,
-    alt: "Aide au transfert de données vers un nouveau smartphone",
+    image: business.images.dataTransferImage,
+    alt: "Illustration d’un transfert de données entre deux smartphones",
   },
 ];
 
@@ -43,17 +42,30 @@ export function ServicesSection() {
           avant de quitter la boutique.
         </p>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid items-stretch gap-6 md:grid-cols-3">
           {services.map(({ icon: Icon, title, text, image, alt }) => (
-            <Card key={title} className="overflow-hidden border-line py-0">
-              <SmartImage src={image} alt={alt} width={640} height={420} />
-              <CardContent className="p-6">
+            <Card
+              key={title}
+              className="flex flex-col overflow-hidden border-line pb-0"
+            >
+              <CardContent className="flex flex-1 flex-col px-6">
                 <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-soft">
                   <Icon className="h-5 w-5 text-brand-deep" aria-hidden="true" />
                 </span>
                 <h3 className="mt-4 text-lg font-extrabold text-ink">{title}</h3>
                 <p className="mt-2 text-sm text-muted-ink">{text}</p>
               </CardContent>
+              {image ? (
+                <img
+                  src={image}
+                  alt={alt}
+                  width={1440}
+                  height={1088}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-20 w-full object-cover"
+                />
+              ) : null}
             </Card>
           ))}
         </div>

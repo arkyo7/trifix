@@ -12,13 +12,18 @@ export function AboutSection() {
   return (
     <section aria-labelledby="about-title" className="bg-card py-16 lg:py-20">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
-        <SmartImage
-          src={business.images.service}
-          alt="Accompagnement personnalisé d’un client chez TRIFIX"
-          width={900}
-          height={700}
-          className="rounded-3xl border border-line shadow-md"
-        />
+        <figure className="m-0">
+          <SmartImage
+            src={business.images.customerServiceImage}
+            alt="Illustration d’un accompagnement personnalisé lors du choix d’un smartphone"
+            width={1440}
+            height={1088}
+            className="rounded-3xl border border-line shadow-md"
+          />
+          <figcaption className="mt-2 text-xs text-muted-foreground">
+            Photo d’illustration
+          </figcaption>
+        </figure>
         <div>
           <p className="text-sm font-extrabold uppercase tracking-widest text-brand">
             Une boutique de proximité
