@@ -26,7 +26,16 @@ export function SmartImage({
 
   useEffect(() => {
     const img = ref.current;
-    if (img && img.complete && img.naturalWidth === 0) setFailed(true);
+    if (img && img.complete && img.naturalWidth === 0) {
+      setFailed(true);
+      return;
+    }
+    const probe = new Image();
+    probe.onerror = () => setFailed(true);
+    probe.src = src;
+    return () => {
+      probe.onerror = null;
+    };
   }, [src]);
 
   return (

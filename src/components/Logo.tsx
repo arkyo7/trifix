@@ -7,7 +7,16 @@ export function Logo({ className = "h-9" }: { className?: string }) {
 
   useEffect(() => {
     const img = ref.current;
-    if (img && img.complete && img.naturalWidth === 0) setFailed(true);
+    if (img && img.complete && img.naturalWidth === 0) {
+      setFailed(true);
+      return;
+    }
+    const probe = new Image();
+    probe.onerror = () => setFailed(true);
+    probe.src = business.images.logo;
+    return () => {
+      probe.onerror = null;
+    };
   }, []);
 
   if (failed) {
