@@ -6,7 +6,7 @@ import { business } from "@/data/business";
 
 export function HeroSection() {
   return (
-    <section id="accueil" className="relative overflow-hidden bg-cream">
+    <section id="accueil" className="relative scroll-mt-24 overflow-hidden bg-cream">
       <div
         className="pointer-events-none absolute inset-0 grid-accent opacity-60"
         aria-hidden="true"
@@ -65,6 +65,9 @@ export function HeroSection() {
             priority
             className="rounded-3xl border border-line shadow-lg"
           />
+          <span className="absolute right-4 top-4 rounded-full border border-line bg-card/90 px-3 py-1 text-xs font-semibold text-muted-ink shadow-sm backdrop-blur">
+            Photo d’illustration
+          </span>
           <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-line bg-card/95 p-4 shadow-md sm:right-auto sm:max-w-[70%]">
             <p className="text-sm font-extrabold text-ink">
               Service personnalisé à Ixelles
