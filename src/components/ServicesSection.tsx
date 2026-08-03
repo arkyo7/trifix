@@ -65,9 +65,7 @@ export function ServicesSection() {
                   decoding="async"
                   className="h-20 w-full object-cover"
                 />
-              ) : (
-                <div className="h-20 w-full bg-brand-soft/40" aria-hidden="true" />
-              )}
+              ) : null}
             </Card>
           ))}
         </div>
